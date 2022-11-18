@@ -24,5 +24,5 @@
 
 <p>
   Link to the page: 
-  <a href="" rel="noopener noreferrer" target="_blank">Número Secreto</a>
+  <a href="https://secret-number-phi.vercel.app/" rel="noopener noreferrer" target="_blank">Número Secreto</a>
 </p>
