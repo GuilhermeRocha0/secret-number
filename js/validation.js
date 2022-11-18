@@ -1,4 +1,8 @@
 function checkIfSpeechHasAValidValue(speech) {
+  if (speech.toLowerCase() === 'game over') {
+    gameOver()
+  }
+
   const number = Number(speech)
 
   if (checkIfValueIsInvalid(number)) {
@@ -75,4 +79,16 @@ function displayLowerOrHigherNumber(number) {
 
   lowerOrHigherParagraphElement.appendChild(arrowIcon)
   tryElement.appendChild(lowerOrHigherParagraphElement)
+}
+
+function gameOver() {
+  document.body.innerHTML = ''
+
+  const gameOverElement = document.createElement('h2')
+  gameOverElement.innerText = 'Game Over'
+
+  document.body.appendChild(gameOverElement)
+  document.body.classList.add('game-over')
+
+  playAgain()
 }
