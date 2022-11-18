@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --bg-color: #0aa1dd;
+  --primary-color: #e8f9fd;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  color: var(--primary-color);
+
+  background-color: var(--bg-color);
+
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6.4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+.message {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+}
+
+.box {
+  border: 0.1rem solid var(--primary-color);
+  display: inline-block;
+  font-size: 6.4rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.btn-play-again {
+  margin-top: 2.4rem;
+  padding-block: 0.8rem;
+  padding-inline: 1.6rem;
+  border: 0;
+  background-color: var(--primary-color);
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: filter 0.4s;
+}
+
+.btn-play-again:hover {
+  filter: brightness(0.8);
+}
+
+.btn-play-again:active:focus {
+  background-color: var(--bg-color);
+  border: 0.1rem solid var(--primary-color);
+  color: var(--primary-color);
+  filter: brightness(1);
+}
